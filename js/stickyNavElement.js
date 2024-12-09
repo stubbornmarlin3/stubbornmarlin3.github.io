@@ -1,4 +1,4 @@
-function stickyNavElement(elementId, toElementBottom){
+function stickyNavElement(elementId, toElementId){
 
     window.addEventListener("DOMContentLoaded", ()=>{
         updateElementHeight();
@@ -9,11 +9,12 @@ function stickyNavElement(elementId, toElementBottom){
     });
 
     function updateElementHeight() {
-        const page = document.getElementById(toElementBottom);
+        const toElement = document.getElementById(toElementId);
         const element = document.getElementById(elementId);
-        var pageHeight = Number(window.getComputedStyle(page).height.slice(0,-2));
-        var elementTop = Number(window.getComputedStyle(element).top.slice(0,-2));
-        element.style.height = `${pageHeight - elementTop}px`;
+        var toElementBottom = toElement.getBoundingClientRect().bottom;
+        var elementTop = element.getBoundingClientRect().top;
+
+        element.style.height = `${toElementBottom - elementTop}px`;
     }
 }
 

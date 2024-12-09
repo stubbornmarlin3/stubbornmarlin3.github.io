@@ -12,7 +12,7 @@ cards.forEach((card) => {
     const cardContent = `
         <div class="card">
 
-            <img src="${card.imgSrc}" alt="ProjectPic" height="50" width="50">
+            <img src="${card.imgSrc}" alt="ProjectPic" height="50" width="auto">
     
             <h1>&lt;${card.title}&gt;</h1>
         

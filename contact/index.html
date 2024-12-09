@@ -6,17 +6,15 @@
     <link rel="stylesheet" href="/globalStyle.css">
     <link rel="stylesheet" href="style.css">
     <script src="/js/stickyNavElement.js"></script>
-    <script src="/js/cards.js" defer></script>
-    <script src="/js/projectCardOrganizer.js" defer></script>
-    <title>Projects ~ Aidan Carter</title>
+    <title>Contact ~ Aidan Carter</title>
 </head>
 <body>
     <div class="pageContainer" id="pageContainer">
 
         <div class="nav">
+            <a class="navLink" href="/">&lt;Projects&gt;</a>
             <a class="navLink" href="/about/">&lt;About&gt;</a>
             <a class="navLink" href="/blog/">&lt;Blog&gt;</a>
-            <a class="navLink" href="/contact/">&lt;Contact&gt;</a>
         </div>
 
         <div class="navMenu">
@@ -28,16 +26,16 @@
         </div>
 
         <div class="collapseMenu">
+            <a class="navLink" href="/">&lt;Projects&gt;</a>
             <a class="navLink" href="/about/">&lt;About&gt;</a>
             <a class="navLink" href="/blog/">&lt;Blog&gt;</a>
-            <a class="navLink" href="/contact/">&lt;Contact&gt;</a>
         </div>
     
         <div class="navGradient"></div>
 
         <div class="profileContainer">
     
-            <img id="headshot" src="/assets/IMG_2017.jpeg" alt="Headshot of Aidan Carter" width="50" height="auto">
+            <img id="headshot" src="/assets/IMG_2017.jpeg" alt="Headshot of Aidan Carter" width="50" height="50">
 
             <div id="name"><h1>Aidan Carter</h1></div>
             <script>stickyNavElement("name", "pageContainer");</script>
@@ -55,31 +53,27 @@
         </div>
 
         <div class="divider"></div>
-    
-        <div class="projectContainer">
 
-            <div id="pageTitle" class="pageTitle"><h1>&lt;Projects&gt;</h1></div>
+        <div class="contactContainer contentContainer">
+
+            <div id="pageTitle" class="pageTitle"><h1>&lt;Contact&gt;</h1></div>
             <script>stickyNavElement("pageTitle", "pageContainer");</script>
 
-            <div class="projectCards" id="projectCards">
-                <!-- JS will fill this in dynamically -->
+            <div class="content">
+                <form action="" onsubmit="alert('Sent! (Not really...)');">
+                    <input class="contactInput" type="text" name="name" placeholder="Name" required>
+                    <input class="contactInput" type="text" name="email" placeholder="Email" required>
+                    <textarea class="contactInput" name="message" rows="10" cols="30" placeholder="Message" required></textarea>
+                    <button type="submit" id="submit">Send Message &rarr;</button>
+                </form>
             </div>
-
-        </div>
-
-        <div class="projectContainerOverflow">
-
-            <div class="projectCards projectCardsOverflow" id="projectCardsOverflow">
-                <!-- JS will fill this in dynamically -->
-            </div>
-
         </div>
 
     </div>
     <footer>
+        <a class="navLink" href="/">&lt;Projects&gt;</a>
         <a class="navLink" href="/about/">&lt;About&gt;</a>
         <a class="navLink" href="/blog/">&lt;Blog&gt;</a>
-        <a class="navLink" href="/contact/">&lt;Contact&gt;</a>
         <h1>Aidan Carter</h1>
         <p><i>© Copyright 2024. All Rights Reserved. Designed by Aidan Carter.</i></p>
     </footer>

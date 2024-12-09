@@ -1,219 +1,3 @@
-* {
-    padding: 0px;
-    margin: 0px;
-}
-
-body {
-    background-color: #403D39;
-    color: #FFFCF2;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    display: grid;
-}
-
-.pageContainer, .pageContainer * {
-    border:none;
-    /* border: red solid 0.1px; */
-}
-
-.pageContainer {
-    display: grid;
-    grid-template-columns: 1fr 2px 2fr;
-    width: 55rem;
-    justify-self: center;
-    padding-right: 1rem;
-}
-
-.nav {
-    grid-column: 1/4;
-    position: sticky;
-    z-index: 5;
-    top: 0;
-    height: 3rem;
-    background:#403D39;
-    border-bottom: #403D39 solid 1px;
-    text-align: right;
-    align-content: center;
-}
-
-.navGradient {
-    grid-column: 1/4;
-    background-image: linear-gradient(#403d39, #403d3900);
-    height: 1rem;
-    position: sticky;
-    top: 3rem;
-    z-index: 5;
-}
-
-.navLink {
-    text-decoration: none;
-    font-size: 1.3rem;
-    color: #FFFCF2;
-}
-
-.navLink:hover {
-    text-decoration: underline;
-    text-decoration-color: #EB5E28;
-}
-
-.nav > a {
-    margin-right: 1rem;
-}
-
-.collapseMenu {
-    display: none;
-    position: fixed;
-    width: 37rem;
-    top: 3rem;
-    padding: 10px 0px;
-    background: #403D39;
-    grid-column: 1/4;
-    z-index: 9;
-}
-
-.collapseMenu > a {
-    display: block;
-    text-align: right;
-    padding-bottom: 2rem;
-    font-size: 2rem;
-    margin: 0 1rem;
-}
-
-
-.navMenu {
-    display: none;
-    grid-column: 1/4;
-    position: sticky;
-    z-index: 5;
-    top: 0;
-    height: 3rem;
-    background:#403D39;
-    border-bottom: #403D39 solid 1px;
-    text-align: right;
-    padding-right: 1rem;
-}
-
-.navMenu > label {
-    font-size: 2.5rem;
-    text-decoration: none;
-    color: #FFFCF2;
-    cursor: pointer;
-    -webkit-user-select: none;
-    user-select: none;
-}
-
-.navMenu > label:hover {
-    color:#EB5E28;
-}
-
-#menuToggle {
-    display: none;
-}
-
-#menuToggle ~ #menuOpen {
-    display: none;
-}
-
-#menuToggle ~ #menuClosed {
-    display: inline-block;
-}
-
-#menuToggle:checked ~ #menuOpen {
-    display: inline-block;
-}
-
-#menuToggle:checked ~ #menuClosed {
-    display: none;
-}
-
-#menuToggle:checked ~ label {
-    color:#EB5E28;
-}
-
-#name {
-    position: absolute;
-    width: 15rem;
-    pointer-events: none;
-}
-
-#name > h1 {
-    position: sticky;
-    z-index: 10;
-    top: .5rem;
-}
-
-#pageTitle {
-    position: absolute;
-    width: fit-content;
-    pointer-events: none;
-    margin-left: 1.5rem;
-}
-
-#pageTitle > h1 {
-    position: sticky;
-    z-index: 8;
-    top: .5rem;
-    width: fit-content;
-    text-decoration: underline;
-    text-decoration-color: #EB5E28;
-}
-
-#divider {
-    border-left:#EB5E28 solid 2px;
-}
-
-.profileContainer {
-    text-align: center;
-    justify-self: center;
-    margin: 1rem;
-    width: 15rem;
-    height: fit-content;
-}
-
-#headshot {
-    width: 13rem;
-    height: auto;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: #252422 0px 3px 8px;
-}
-
-.profileLinks {
-    margin-top: 4rem;
-}
-
-.profileLinks > p {
-    margin-bottom: 2rem;
-    color:#CCC5B9;
-}
-
-/* .profileLinks > a {
-    display: inline-block;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    color: #CCC5B9;
-}
-
-.profileLinks > a:hover {
-    color: #EB5E28;
-} */
-
-.profileLinks > button {
-    background: #EB5E28;
-    border-radius: .25rem;
-    height: 2rem;
-    width: 8rem;
-    margin: .5rem auto 1.5rem auto;
-    display: block;
-    cursor: pointer;
-    color:#FFFCF2
-}
-
-.profileLinks > button:hover {
-    color:#EB5E28;
-    background: #FFFCF2;
-    transition: all .2s;
-}
-
 .projectContainer {
     margin: 1rem;
 }
@@ -283,7 +67,8 @@ body {
     margin: .5rem 1rem 0 auto;
     display: block;
     cursor: pointer;
-    color:#FFFCF2
+    color:#FFFCF2;
+    border: none;
 }
 
 .card > button:hover {
@@ -292,45 +77,7 @@ body {
     transition: all .2s;
 }
 
-footer {
-    height: 6rem;
-    text-align: center;
-    padding-top: 2rem;
-    margin-top: 2rem;
-    font-size: .75rem;
-    box-shadow: #252422 2px 0px 8px;
-    color:#CCC5B9;
-}
-
-footer > h1 {
-    padding: 1.5rem 0 1rem;
-}
-
-footer > p {
-    padding: .5rem;
-    padding-bottom: 1rem;
-    width: auto;
-    background:#252422;
-}
-
-footer > a {
-    margin: 1rem;
-    font-size: 1rem;
-}
-
 @media (max-width: 56rem) {
-
-    #divider {
-        height: 32rem;
-    }
-
-    #pageTitle {
-        margin-left: 2.5rem;
-    }
-
-    .pageContainer {
-        width: 37rem;
-    }
 
     .projectCards {
        grid-template-columns: 1fr;
@@ -339,107 +86,12 @@ footer > a {
     .projectCardsOverflow {
         grid-template-columns: 1fr 1fr;
     }
-
-    .nav {
-        display: none;
-    }
-
-    .navMenu {
-        display: block;
-        grid-column: 1/4;
-    }
-
-    div:has(#menuToggle:checked) ~ .collapseMenu {
-        display: block;
-    }
-
-    div:has(#menuToggle:checked) ~ .navGradient {
-        top: 17.2rem;
-    }
 }
 
 @media (max-width: 38rem) {
 
-    #divider {
-        display: none;
-    }
-
-    #pageTitle {
-        margin: 0;
-    }
-
-    #pageTitle > h1 {
-        width: 20rem;
-        text-align: center;
-        font-size: 3rem;
-    }
-
-    .pageContainer {
-        width: 100%;
-        grid-template-columns: 1fr;
-        padding: 0;
-    }
-
-    .profileContainer {
-        width: 20rem;
-    }
-
-    .profileLinks > p {
-        font-size: 1.5rem;
-        margin: 5rem 0 3rem 0;
-    }
-
-    /* .profileLinks > a {
-        font-size: 1.4rem;
-        margin-top: 1.5rem;
-    } */
-
-    .profileLinks > button {
-        margin-bottom: 2rem;
-        height: 5rem;
-        width: 14rem;
-        font-size: 1.3rem;
-        border-radius: 0.5rem;
-    }
-
-    #headshot {
-        width: 16rem;
-    }
-
-    #name {
-        width: 20rem;
-    }
-
-    #name > h1 {
-        position: static;
-        z-index: 1;
-        font-size: 3rem;
-    }
-
-    .nav, .navGradient, .navMenu, .collapseMenu, .projectContainerOverflow {
+    .projectContainerOverflow {
         grid-column: 1;
-    }
-
-    .navMenu {
-        height: 4.5rem;
-    }
-
-    .navGradient {
-        top: 4.5rem;
-    }
-
-    .collapseMenu {
-        width: 100%;
-        padding-right: 1rem;
-        top: 4rem;
-    }
-
-    div:has(#menuToggle:checked) ~ .navGradient {
-        top: 18.2rem;
-    }
-
-    .navMenu > label {
-        font-size: 3.5rem;
     }
 
     .projectContainer, .projectContainerOverflow {
@@ -481,10 +133,6 @@ footer > a {
         height: 3rem;
         width: 8rem;
         font-size: 1rem;
-    }
-
-    footer > a {
-        font-size: 1.5rem;
     }
     
 }

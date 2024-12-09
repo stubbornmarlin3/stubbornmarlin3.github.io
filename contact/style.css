@@ -1,0 +1,72 @@
+.content {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
+.contactInput {
+    width: 95%;
+    font-size: 1.25rem;
+    border-radius: .25rem;
+    margin-bottom: 1rem;
+    padding: .5rem;
+    border:none;
+    box-shadow: #252422 1px 3px 8px;
+}
+
+input.contactInput {
+    height: 2rem;
+}
+
+textarea.contactInput {
+    height: 12rem;
+    resize: vertical;
+}
+
+#submit {
+    background: #EB5E28;
+    border-radius: .25rem;
+    height: 2rem;
+    width: 8rem;
+    margin: 1rem 3rem 1rem;
+    cursor: pointer;
+    color:#FFFCF2;
+    border:none;
+}
+
+#submit:hover {
+    color:#EB5E28;
+    background: #FFFCF2;
+    transition: all .2s;
+}
+
+@media (max-width: 56rem) {
+    .pageTitle {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 38rem) {
+    .profileContainer {
+        display: none;
+    }
+
+    .pageTitle {
+        margin: 0;
+    }
+
+    .contactInput {
+        width: 95%;
+        font-size: 1.5rem;
+    }
+
+    #submit {
+        height: 4rem;
+        width: 14rem;
+        font-size: 1.25rem;
+        border-radius: 0.5rem;
+    }
+
+}

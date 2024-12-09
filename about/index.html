@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/globalStyle.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/js/stickyNavElement.js"></script>
+    <script src="/js/download.js" defer></script>
+    <title>About ~ Aidan Carter</title>
+</head>
+<body>
+    <div class="pageContainer" id="pageContainer">
+
+        <div class="nav">
+            <a class="navLink" href="/">&lt;Projects&gt;</a>
+            <a class="navLink" href="/blog/">&lt;Blog&gt;</a>
+            <a class="navLink" href="/contact/">&lt;Contact&gt;</a>
+        </div>
+
+        <div class="navMenu">
+
+            <input type="checkbox" name="menuToggle" id="menuToggle">
+            <label id="menuClosed" for="menuToggle">&#x2631;</label>
+            <label id="menuOpen" for="menuToggle">&#x2634;</label>
+
+        </div>
+
+        <div class="collapseMenu">
+            <a class="navLink" href="/">&lt;Projects&gt;</a>
+            <a class="navLink" href="/blog/">&lt;Blog&gt;</a>
+            <a class="navLink" href="/contact/">&lt;Contact&gt;</a>
+        </div>
+    
+        <div class="navGradient"></div>
+
+        <div class="profileContainer">
+    
+            <img id="headshot" src="/assets/IMG_2017.jpeg" alt="Headshot of Aidan Carter" width="50" height="auto">
+
+            <div id="name"><h1>Aidan Carter</h1></div>
+
+            <div class="profileLinks">
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt, distinctio.</p>
+
+                <button type="button" onclick="location.href='https://github.com/stubbornmarlin3'">GitHub &rArr;</button>
+
+                <button type="button" onclick="location.href='https://www.linkedin.com/in/aidancarter129/'">LinkedIn &rArr;</button>
+
+            </div>
+
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="aboutContainer contentContainer" id="aboutContainer">
+
+            <div id="aboutTitle" class="pageTitle"><h1>&lt;About&gt;</h1></div>
+            <script>stickyNavElement("aboutTitle", "aboutContainer");</script>
+
+            <div class="content"> 
+                
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, ipsa non laborum explicabo pariatur provident et placeat! Culpa, expedita. Veritatis voluptatem nam adipisci unde optio totam. Minus voluptatum, aut libero deleniti facilis veniam cum, optio eaque distinctio, porro quae laboriosam unde perferendis praesentium? Maiores sunt inventore quaerat corrupti dignissimos quisquam, praesentium voluptatibus minima earum quae aliquam aut, repellendus labore dolorem hic et in harum amet consequuntur culpa? Libero quidem harum expedita nam, itaque accusamus repellat. Ducimus rem maiores perferendis, et ea eveniet facilis error, aliquid, recusandae beatae amet! Assumenda quas fugiat voluptatum, nam voluptate ducimus eos facilis inventore doloribus repellat pariatur voluptas quibusdam. Officiis totam id accusamus consequuntur aut? Earum consectetur ipsum eaque, culpa dignissimos ea ad sed quibusdam ipsa adipisci. Corrupti ex eveniet totam a harum quisquam lorem128 
+                </p> 
+                
+            </div>
+
+        </div>
+
+        <div> <!-- Just for empty space so that profile stays fixed while scrolling --> </div>
+        <div class="divider"></div>
+
+        <div class="resumeContainer contentContainer" id="resumeContainer">
+
+            <div id="resumeTitle" class="pageTitle"><h1>&lt;Resume&gt;</h1></div>
+            <script>stickyNavElement("resumeTitle", "resumeContainer");</script>
+
+            <div class="content">
+
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt natus atque tenetur vitae voluptas vero aliquid fugit voluptate ratione explicabo reprehenderit laborum, dolorum quasi iste! Fugit a mollitia nam quod inventore magni. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam magni, dolorum nulla impedit ea debitis distinctio tempore id, quod veritatis, repudiandae aliquam mkdss
+                </p>
+
+                <button type="button" id="resumeDownload" onclick="download('/assets/resume.pdf', 'Aidan_Carter_Resume.pdf')">&darr; Save My Resume</button>
+
+                <img src="/assets/resume.jpeg" alt="Resume" id="resume" height="50" width="auto">
+
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <a class="navLink" href="/">&lt;Projects&gt;</a>
+        <a class="navLink" href="/blog/">&lt;Blog&gt;</a>
+        <a class="navLink" href="/contact/">&lt;Contact&gt;</a>
+        <h1>Aidan Carter</h1>
+        <p><i>© Copyright 2024. All Rights Reserved. Designed by Aidan Carter.</i></p>
+    </footer>
+</body>
+</html>

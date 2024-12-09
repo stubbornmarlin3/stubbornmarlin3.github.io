@@ -1,0 +1,50 @@
+.profileContainer {
+    position: sticky;
+    top: 5rem;
+}
+
+#resume {
+    width: 100%;
+    height: auto;
+}
+
+#resumeDownload {
+    background: #EB5E28;
+    border-radius: .25rem;
+    height: 2rem;
+    width: 8rem;
+    margin: 1rem;
+    cursor: pointer;
+    color:#FFFCF2;
+    border:none;
+}
+
+#resumeDownload:hover {
+    color:#EB5E28;
+    background: #FFFCF2;
+    transition: all .2s;
+}
+
+@media (max-width: 56rem) {
+    .pageTitle {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 38rem) {
+    .profileContainer {
+        display: none;
+    }
+
+    .pageTitle {
+        margin: 0;
+    }
+
+    #resumeDownload {
+        height: 4rem;
+        width: 14rem;
+        font-size: 1.4rem;
+        border-radius: 0.5rem;
+    }
+
+}
