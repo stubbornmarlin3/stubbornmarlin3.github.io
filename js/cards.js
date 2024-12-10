@@ -28,9 +28,9 @@ const cards = [
     "button" : "Github &rArr;"
 },
 {
-    "title" : "Webpages",
+    "title" : "Portfolio",
     "imgSrc" : "assets/project_Web.jpeg",
-    "desc" : "A collection of classwork from CS170 for web development as different branches to this webpage.",
+    "desc" : "The final project for CS170, a portfolio webpage to show skills learned in the realm of web development.",
     "link" : "https://github.com/stubbornmarlin3/stubbornmarlin3.github.io",
     "button" : "Github &rArr;"
 }
