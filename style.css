@@ -93,7 +93,7 @@
     
 }
 
-@media (max-width: 37rem) {
+@media (max-width: 37em) {
 
     .projectContainerOverflow {
         grid-column: 1;

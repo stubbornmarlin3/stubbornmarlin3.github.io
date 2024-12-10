@@ -1,4 +1,4 @@
-const media = window.matchMedia("(max-width: 56rem)");
+const media = window.matchMedia("(max-width: 55rem)");
 
 const cardContainer = document.getElementById("projectCards");
 const cardContainerOverflow = document.getElementById("projectCardsOverflow");
