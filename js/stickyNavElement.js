@@ -1,9 +1,9 @@
 function stickyNavElement(elementId, toElementId){
 
-    window.addEventListener("DOMContentLoaded", ()=>{
+    window.addEventListener("load", ()=>{
         updateElementHeight();
     });
-    
+
     window.addEventListener("resize", ()=>{
         updateElementHeight();
     });
@@ -17,5 +17,3 @@ function stickyNavElement(elementId, toElementId){
         element.style.height = `${toElementBottom - elementTop}px`;
     }
 }
-
-

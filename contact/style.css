@@ -42,19 +42,10 @@ textarea.contactInput {
     transition: all .2s;
 }
 
-@media (max-width: 56rem) {
-    .pageTitle {
-        margin-left: 2rem;
-    }
-}
 
-@media (max-width: 38rem) {
+@media (max-width: 37rem) {
     .profileContainer {
         display: none;
-    }
-
-    .pageTitle {
-        margin: 0;
     }
 
     .contactInput {
